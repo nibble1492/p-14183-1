@@ -11,7 +11,8 @@ public record PostDto(
         @NotNull LocalDateTime modifyDate,
         @NotNull int authorId,
         @NotNull String authorName,
-        @NotNull String title
+        @NotNull String title,
+        @NotNull String summary
 ) {
     public PostDto(Post post) {
         this(
@@ -20,7 +21,8 @@ public record PostDto(
                 post.getModifyDate(),
                 post.getAuthor().getId(),
                 post.getAuthor().getName(),
-                post.getTitle()
+                post.getTitle(),
+                "요약" + post.getId() + "번 게시글입니다."
         );
     }
 }
