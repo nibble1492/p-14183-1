@@ -22,7 +22,6 @@ public class BaseInitData {
     private final PostService postService;
     private final MemberService memberService;
 
-
     @Bean
     ApplicationRunner baseInitDataApplicationRunner() {
         return args -> {

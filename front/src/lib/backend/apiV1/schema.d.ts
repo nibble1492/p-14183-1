@@ -228,7 +228,6 @@ export interface components {
             authorId: number;
             authorName: string;
             title: string;
-            summary: string;
         };
         RsDataPostDto: {
             resultCode: string;
@@ -240,17 +239,17 @@ export interface components {
         };
         PostCommentDto: {
             /** Format: int32 */
-            id?: number;
+            id: number;
             /** Format: date-time */
-            createDate?: string;
+            createDate: string;
             /** Format: date-time */
-            modifyDate?: string;
+            modifyDate: string;
             /** Format: int32 */
-            authorId?: number;
-            authorName?: string;
+            authorId: number;
+            authorName: string;
             /** Format: int32 */
-            postId?: number;
-            content?: string;
+            postId: number;
+            content: string;
         };
         RsDataPostCommentDto: {
             resultCode: string;
