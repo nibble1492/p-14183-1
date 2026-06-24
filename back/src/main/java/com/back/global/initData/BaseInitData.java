@@ -22,12 +22,12 @@ public class BaseInitData {
     private final PostService postService;
     private final MemberService memberService;
 
+
     @Bean
     ApplicationRunner baseInitDataApplicationRunner() {
         return args -> {
             self.work1();
             self.work2();
-            self.work3();
         };
     }
 
@@ -73,9 +73,5 @@ public class BaseInitData {
         post1.addComment(memberUser2, "댓글 1-3");
         post2.addComment(memberUser3, "댓글 2-1");
         post2.addComment(memberUser3, "댓글 2-2");
-    }
-
-    @Transactional
-    public void work3() {
     }
 }
